@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="C/C++ software engineer specializing in low-level systems programming">
+
+        <title>Parallaxi | C/C++ Software Engineer</title>
+
+        <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+
+        <!-- <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+        <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+        <noscript><link rel="stylesheet" href="css/responsive.css"></noscript> -->
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/responsive.css" media="print" onload="this.media='all'">
+
+        <!-- <link rel="preload" href="assets/images/profile-picture.webp" as="image" type="image/webp">
+        <link rel="preload" href="assets/images/network-stack.webp" as="image" type="image/webp">
+        <link rel="preload" href="assets/images/ray-tracer.webp" as="image" type="image/webp">
+        <link rel="preload" href="assets/images/memory-allocator.webp" as="image" type="image/webp"> -->
+
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" media="print" onload="this.media='all'">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
+    </head>
+
+    <body class="dark-theme">
+        <canvas id="canvas"></canvas>
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <h1 class="glowIn">Parallaxi</h1>
+                    <p>//<span id="typewriter"></span></p>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#home" aria-label="Home Section">Home</a></li>
+                        <li><a href="#about" aria-label="About Section">About</a></li>
+                        <li><a href="#projects" aria-label="Projects Section">Projects</a></li>
+                        <li><a href="#experience" aria-label="Experience Section">Experience</a></li>
+                        <li><a href="#contact" aria-label="Contact Section">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="theme-toggle">
+                    <button id="theme-toggle-button" aria-label="Toggle light/dark theme">
+                        <i class="bi bi-sun-fill" aria-hidden="true"></i>
+                        <i class="bi bi-moon-fill" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="mobile-menu-toggle" aria-label="Toogle mobile menu" role="button" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="home">
+                <div class="container">
+                    <div class="home-content">
+                        <h2>Building Efficient Systems</h2>
+                        <p>Passionate C/C++ programmer with expertise in low-level systems, graphics programming and performance optimization</p>
+
+                        <div class="cta-buttons">
+                            <a class="button primary-button" href="#projects" aria-label="View projects">View Projects</a>
+                            <a class="button secondary-button" href="#contact" aria-label="Contact me">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="profile-picture">
+                        <img src="assets/images/profile-picture.webp" width="300" height="300" alt="Profile picture">
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="container">
+                    <h2 class="section-title">About Me</h2>
+
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>
+                                I'm a software developer specializing in C/C++ development with a focus on system-level programming, rendering systems and performance-critical applications.
+                                <br>
+                                With a deep understanding of computer architecture, memory management, and optimization techniques, I build efficient and reliable software solutions.
+                            </p>
+
+                            <h3>Skills</h3>
+                            <div class="skills">
+                                <div class="skill-category">
+                                    <h4>Languages</h4>
+                                    <ul>
+                                        <li>C</li>
+                                        <li>C++</li>
+                                        <li>Python</li>
+                                        <li>Lua</li>
+                                        <li>Pascal</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>GLSL</li>
+                                    </ul>
+                                </div>
+
+                                <div class="skill-category">
+                                    <h4>Technologies</h4>
+                                    <ul>
+                                        <li>Multithreading</li>
+                                        <li>Memory Management</li>
+                                    </ul>
+                                </div>
+
+                                <div class="skill-category">
+                                    <h4>Tools</h4>
+                                    <ul>
+                                        <li>Git</li>
+                                        <li>VSCode</li>
+                                        <li>Visual Studio</li>
+                                        <li>GCC/Clang</li>
+                                        <li>Premake</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="code-snippet">
+                            <div class="code-header">
+                                <span>Fibonacci.cpp</span>
+                            </div>
+<pre>
+<code>constexpr int Fibonacci(int n)
+{
+    return (n <= 1) ? n : Fibonacci(n - 1) + Fibonacci(n - 2);
+}
+</code>
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="container">
+                    <h2 class="section-title">Projects</h2>
+
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="assets/images/game-engine.webp" width="512" height="512" loading="lazy" alt="game-engine picture">
+                            </div>
+                            <div class="project-content">
+                                <h3>2D / 3D Game Engine</h3>
+                                <p>Work in progress game engine built from the ground up. Currently features OpenGL which supports batch rendering and instancing.</p>
+
+                                <div class="tech-stack">
+                                    <span>C++</span>
+                                    <span>OpenGL</span>
+                                    <span>Graphics</span>
+                                </div>
+                                <div class="project-links">
+                                    <a class="button small-button" href="#" aria-label="View source code on Github">Source <i class="bi bi-github" aria-hidden="true"></i></a>
+                                    <a class="button small-button" href="#" aria-label="View live demo">Demo <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="assets/images/ray-tracer.webp" width="512" height="512" loading="lazy" alt="ray-tracer picture">
+                            </div>
+                            <div class="project-content">
+                                <h3>Real-time Ray Tracer</h3>
+                                <p>A blazing fast ray tracer optimized for real-time using OpenGL.</p>
+
+                                <div class="tech-stack">
+                                    <span>C++</span>
+                                    <span>OpenGL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a class="button small-button" href="#" aria-label="View source code on Github">Source <i class="bi bi-github" aria-hidden="true"></i></a>
+                                    <a class="button small-button" href="#" aria-label="View live demo">Demo <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="assets/images/memory-allocator.webp" width="512" height="512" loading="lazy" alt="memory-allocator picture">
+                            </div>
+                            <div class="project-content">
+                                <h3>Custom Memory Allocator</h3>
+                                <p>A high-performance memory allocator optimized for embedded systems with minimal fragmentation and real-time guarantees.</p>
+
+                                <div class="tech-stack">
+                                    <span>C++</span>
+                                    <span>Embedded</span>
+                                </div>
+                                <div class="project-links">
+                                    <a class="button small-button" href="#" aria-label="View source code on Github">Source <i class="bi bi-github" aria-hidden="true"></i></a>
+                                    <a class="button small-button" href="#" aria-label="View live demo">Demo <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <div class="container">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+                                <h3>First Steps</h3>
+                                <h4>Learning Python</h4>
+                                <p class="timeline-date">2020 - 2022</p>
+                                <p>During my first year of high school, I began my journey with Python, creating a variety of simulations and games inspired by my interests in physics and gaming.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+                                <h3>Advancing Skills</h3>
+                                <h4>Exploring the Area</h4>
+                                <p class="timeline-date">2022 - 2023</p>
+                                <p>I transitioned more into C++ as I wanted to focus on writing performance-optimized code. Still expanding my skills, I learned many other tools/languages.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+                                <h3>Deeping Expertise</h3>
+                                <h4>Low-Level Systems Programming</h4>
+                                <p class="timeline-date">2023 - 2024</p>
+                                <p>Building on my C++ experience, I moved into low-level systems programming, working closer to the hardware to develop efficient and high-performance software.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education">
+                        <h3>Education</h3>
+
+                        <div class="education-item">
+                            <h4>High School Diploma</h4>
+                            <h5>Hermanus High School</h5>
+                            <p>2020 - 2024</p>
+                        </div>
+
+                        <div class="education-item">
+                            <h4>Bachelor of Computer Science</h4>
+                            <h5>University of Cape Town</h5>
+                            <p>2026 - 2030 (Future)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container">
+                    <h2 class="section-title">Contact Me</h2>
+
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                                <p>chriscoronaios.cc@gmail.com</p>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                                <p>parallaxi.cc@gmail.com</p>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                                <p>South Africa (Western Cape)</p>
+                            </div>
+
+                            <div class="social-links">
+                                <a class="social-link" href="https://github.com/Parallaxi" target="_blank" aria-label="Github profile"><i class="bi bi-github" aria-hidden="true"></i></a>
+                                <a class="social-link" href="https://www.instagram.com/chriscoronaios.cc" target="_blank" aria-label="Instagram profile"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                                <a class="social-link" href="https://discord.com/users/677188831543558194" target="_blank" aria-label="Discord profile"><i class="bi bi-discord" aria-hidden="true"></i></a>
+                                <a class="social-link" href="https://steamcommunity.com/profiles/76561199385658071/" target="_blank" aria-label="Steam profile"><i class="bi bi-steam" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" autocomplete="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" autocomplete="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+
+                                <button type="submit" class="button primary-button">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <p><i class="bi bi-c-circle" aria-hidden="true"></i> <span id="current-year">2023</span> Parallaxi. All rights reserved.</p>
+
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/main.js" defer></script>
+        <script src="js/theme.js" defer></script>
+        <!-- <script src="js/canvas.js"></script> -->
+
+        <script defer>
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>
