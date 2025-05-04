@@ -86,16 +86,12 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => {
 
         const targetElement = document.querySelector(targetId);
 
-        console.log(targetElement)
-
         if (targetElement)
         {
             // const headerHeight = document.querySelector("header").offsetHeight;
             const headerHeight = Math.floor(document.querySelector("header").getBoundingClientRect().height);
             const scrollOffset = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
             // const scrollOffset = targetElement.offsetTop - headerHeight;
-
-            console.log(headerHeight);
 
             window.scrollTo({
                 top: scrollOffset,
