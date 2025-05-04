@@ -91,7 +91,7 @@ html {
     scroll-behavior: smooth;
 }
 
-#canvas {
+/* #canvas {
     position: fixed;
 
     top: 0;
@@ -104,7 +104,7 @@ html {
     z-index: -100;
 
     pointer-events: none;
-}
+} */
 
 @property --fadeBackgroundGradientValue {
     syntax: "<percentage>";
@@ -433,8 +433,6 @@ nav ul li a.active::after {
 }
 
 main {
-    padding-top: 100px;
-
     backdrop-filter: blur(var(--blur-lg));
     -webkit-backdrop-filter: blur(var(--blur-lg));
 }
@@ -443,9 +441,9 @@ main {
     display: flex;
     align-items: center;
 
-    padding: var(--space-xl) 0;
+    padding: 150px 0 var(--space-xl) 0;
 
-    height: calc(100vh - 100px);
+    height: 100vh;
 }
 
 #home .container {

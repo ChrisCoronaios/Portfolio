@@ -63,7 +63,7 @@
         -webkit-backdrop-filter: none;
     }
 
-    header::after {
+    /* header::after {
         content: "";
 
         position: absolute;
@@ -77,7 +77,7 @@
         -webkit-backdrop-filter: blur(var(--blur-md));
 
         z-index: -1;
-    }
+    } */
 
     .logo p {
         font-size: 0.8rem;
