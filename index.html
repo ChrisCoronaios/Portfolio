@@ -13,11 +13,116 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="C/C++ software engineer specializing in low-level systems programming">
+        <meta name="description" content="C/C++ software programmer specializing in low-level systems programming">
 
-        <title>Parallaxi | C/C++ Software Engineer</title>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://parallaxi.me/#website",
+                        "name": "Parallaxi | C/C++ Software Programmer",
+                        "description": "C/C++ software programmer specializing in low-level systems programming",
+                        "url": "https://parallaxi.me/",
+                        "publisher": { "@id": "https://parallaxi.me/#person" }
+                    },
+                    {
+                        "@type": "Person",
+                        "@id": "https://parallaxi.me/#person",
+                        "name": "Parallaxi",
+                        "alternateName": "Christopher Coronaios",
+                        "jobTitle": "Software Developer",
+                        "description": "Passionate C/C++ programmer with expertise in low-level systems, graphics programming and performance optimization",
+                        "url": "https://parallaxi.me/",
+                        "image": "https://parallaxi.me/assets/images/profile-picture.webp",
+                        "email": [
+                            "mailto:chriscoronaios.cc@gmail.com",
+                            "mailto:parallaxi.cc@gmail.com"
+                        ],
+                        "sameAs": [
+                            "https://github.com/Parallaxi",
+                            "https://www.instagram.com/chriscoronaios.cc",
+                            "https://discord.com/users/677188831543558194",
+                            "https://steamcommunity.com/profiles/76561199385658071"
+                        ],
+                        "alumniOf": [
+                            {
+                                "@type": "EducationalOrganization",
+                                "name": "Hermanus High School"
+                            },
+                            {
+                                "@type": "CollegeOrUniversity",
+                                "name": "University of Cape Town"
+                            }
+                        ],
+                        "knowsLanguage": [
+                            "C",
+                            "C++",
+                            "Python",
+                            "Lua",
+                            "Pascal",
+                            "HTML",
+                            "CSS",
+                            "JavaScript",
+                            "GLSL"
+                        ],
+                        "knowsAbout": [
+                            "Multithreading",
+                            "Memory Management",
+                            "Graphics Programming",
+                            "Performance Optimization"
+                        ],
+                        "workExample": [
+                            { "@id": "https://parallaxi.me/#project-game-engine" },
+                            { "@id": "https://parallaxi.me/#project-path-tracer" },
+                            { "@id": "https://parallaxi.me/#project-memory-allocator" }
+                        ]
+                    },
+                    {
+                        "@type": "CreativeWork",
+                        "@id": "https://parallaxi.me/#project-game-engine",
+                        "name": "2D / 3D Game Engine",
+                        "description": "Work in progress game engine built from the ground up. Currently features OpenGL with batch rendering and instancing.",
+                        "url": "https://parallaxi.me/#projects",
+                        "keywords": ["C++", "OpenGL", "Graphics"],
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://parallaxi.me/#projects"
+                        }
+                    },
+                    {
+                        "@type": "CreativeWork",
+                        "@id": "https://parallaxi.me/#project-path-tracer",
+                        "name": "Real-time Path Tracer",
+                        "description": "A blazing fast path tracer optimized for real-time rendering using OpenGL.",
+                        "url": "https://parallaxi.me/#projects",
+                        "keywords": ["C++", "OpenGL"],
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://parallaxi.me/#projects"
+                        }
+                    },
+                    {
+                        "@type": "CreativeWork",
+                        "@id": "https://parallaxi.me/#project-memory-allocator",
+                        "name": "Custom Memory Allocator",
+                        "description": "High-performance memory allocator optimized for embedded systems with minimal fragmentation and real-time guarantees.",
+                        "url": "https://parallaxi.me/#projects",
+                        "keywords": ["C++", "Embedded"],
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://parallaxi.me/#projects"
+                        }
+                    }
+                ]
+            }
+        </script>
 
-        <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+        <title>Parallaxi | C/C++ Software Programmer</title>
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
         <!-- <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="preload" href="css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -25,12 +130,12 @@
         <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
         <noscript><link rel="stylesheet" href="css/responsive.css"></noscript> -->
 
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/responsive.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/responsive.css" media="print" onload="this.media='all'">
 
         <!-- <link rel="preload" href="assets/images/profile-picture.webp" as="image" type="image/webp">
         <link rel="preload" href="assets/images/network-stack.webp" as="image" type="image/webp">
-        <link rel="preload" href="assets/images/ray-tracer.webp" as="image" type="image/webp">
+        <link rel="preload" href="assets/images/path-tracer.webp" as="image" type="image/webp">
         <link rel="preload" href="assets/images/memory-allocator.webp" as="image" type="image/webp"> -->
 
         <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
@@ -90,7 +195,7 @@
                         </div>
                     </div>
                     <div class="profile-picture">
-                        <img src="assets/images/profile-picture.webp" width="300" height="300" alt="Profile picture">
+                        <img src="/assets/images/profile-picture.webp" width="300" height="300" alt="Profile picture">
                     </div>
                 </div>
             </section>
@@ -168,7 +273,7 @@
                     <div class="project-grid">
                         <div class="project-card">
                             <div class="project-image">
-                                <img src="assets/images/game-engine.webp" width="512" height="512" loading="lazy" alt="game-engine picture">
+                                <img src="/assets/images/game-engine.webp" width="512" height="512" loading="lazy" alt="game-engine picture">
                             </div>
                             <div class="project-content">
                                 <h3>2D / 3D Game Engine</h3>
@@ -188,11 +293,11 @@
 
                         <div class="project-card">
                             <div class="project-image">
-                                <img src="assets/images/ray-tracer.webp" width="512" height="512" loading="lazy" alt="ray-tracer picture">
+                                <img src="/assets/images/path-tracer.webp" width="512" height="512" loading="lazy" alt="ray-tracer picture">
                             </div>
                             <div class="project-content">
-                                <h3>Real-time Ray Tracer</h3>
-                                <p>A blazing fast ray tracer optimized for real-time using OpenGL.</p>
+                                <h3>Real-time Path Tracer</h3>
+                                <p>A blazing fast path tracer optimized for real-time using OpenGL.</p>
 
                                 <div class="tech-stack">
                                     <span>C++</span>
@@ -207,7 +312,7 @@
 
                         <div class="project-card">
                             <div class="project-image">
-                                <img src="assets/images/memory-allocator.webp" width="512" height="512" loading="lazy" alt="memory-allocator picture">
+                                <img src="/assets/images/memory-allocator.webp" width="512" height="512" loading="lazy" alt="memory-allocator picture">
                             </div>
                             <div class="project-content">
                                 <h3>Custom Memory Allocator</h3>
@@ -309,7 +414,7 @@
                                 <a class="social-link" href="https://github.com/Parallaxi" target="_blank" aria-label="Github profile"><i class="bi bi-github" aria-hidden="true"></i></a>
                                 <a class="social-link" href="https://www.instagram.com/chriscoronaios.cc" target="_blank" aria-label="Instagram profile"><i class="bi bi-instagram" aria-hidden="true"></i></a>
                                 <a class="social-link" href="https://discord.com/users/677188831543558194" target="_blank" aria-label="Discord profile"><i class="bi bi-discord" aria-hidden="true"></i></a>
-                                <a class="social-link" href="https://steamcommunity.com/profiles/76561199385658071/" target="_blank" aria-label="Steam profile"><i class="bi bi-steam" aria-hidden="true"></i></a>
+                                <a class="social-link" href="https://steamcommunity.com/profiles/76561199385658071" target="_blank" aria-label="Steam profile"><i class="bi bi-steam" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <div class="contact-form">
@@ -354,8 +459,8 @@
             </div>
         </footer>
 
-        <script src="js/main.js" defer></script>
-        <script src="js/theme.js" defer></script>
+        <script src="/js/main.js" defer></script>
+        <script src="/js/theme.js" defer></script>
         <!-- <script src="js/canvas.js"></script> -->
 
         <script defer>
