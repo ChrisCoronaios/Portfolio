@@ -3,6 +3,7 @@ const typeWriterElement = document.getElementById("typewriter");
 const navElement = document.querySelector("nav");
 const navLinksElements = document.querySelectorAll("nav ul li a");
 const mobileMenuToggleElement = document.querySelector(".mobile-menu-toggle");
+const formElement = document.querySelector("form");
 const sectionElements = document.querySelectorAll("section");
 
 const animateElements = document.querySelectorAll(".project-card, .timeline-item, .education-item, .contact-info, .contact-form");
@@ -11,7 +12,7 @@ const typewriterLines = [
     "Low-Level Software Developer",
     "Systems Programmer",
     "C/C++ Systems Developer",
-    "Real-Time Software Developer"
+    "Real-time Software Developer"
 ];
 
 const typingSpeed = 50;
@@ -101,6 +102,14 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => {
             history.pushState(null, null, targetId);
         }
     });
+});
+
+document.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    alert("Form submission is not implemented yet.");
+
+    formElement.reset();
 });
 
 const observer = new IntersectionObserver((entries) => {
