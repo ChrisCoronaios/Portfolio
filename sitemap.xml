@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://parallaxi.me/</loc>
-        <lastmod>2025-06-15</lastmod>
+        <lastmod>2025-06-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+
+        <image:image>
+            <image:loc>https://parallaxi.me/assets/images/profile-picture.webp</image:loc>
+            <image:caption>Profile picture of Parallaxi</image:caption>
+            <image:title>Parallaxi Profile Picture</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://parallaxi.me/assets/images/game-engine.webp</image:loc>
+            <image:caption>Game engine built by Parallaxi</image:caption>
+            <image:title>Game Engine</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://parallaxi.me/assets/images/path-tracer.webp</image:loc>
+            <image:caption>Path tracer built by Parallaxi</image:caption>
+            <image:title>Path Tracer</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://parallaxi.me/assets/images/memory-allocator.webp</image:loc>
+            <image:caption>Memory allocator built by Parallaxi</image:caption>
+            <image:title>Memory Allocator</image:title>
+        </image:image>
     </url>
 </urlset>
