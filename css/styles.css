@@ -22,7 +22,7 @@
     --dark-glass-border: rgba(150, 150, 150, 0.1);
     --dark-code-background: rgba(40, 45, 50, 0.8);
     --dark-card-background: rgba(30, 30, 30, 0.8);
-    --dark-shadow: rgba(0, 0, 0, 0.2);
+    --dark-shadow: rgba(0, 0, 0, 0.5);
     --dark-background-gradient-color: rgba(80, 160, 255, 0.4);
 
     --font-primary: "Roboto";
@@ -274,7 +274,7 @@ header .container {
     justify-content: space-between;
 }
 
-.logo h1 {
+.callsign h1 {
     margin-bottom: 0.2rem;
 
     font-size: 1.8rem;
@@ -282,7 +282,7 @@ header .container {
     color: var(--accent);
 }
 
-.logo p {
+.callsign p {
     position: relative;
 
     font-family: "Jetbrains Mono";
